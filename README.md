@@ -1,2 +1,2 @@
 # Dsnp_ntu
- Homework Codes for data structure and programming courses in ntu 
+ Homework Codes for Data Structure and Programming courses in NTU 
