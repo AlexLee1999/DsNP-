@@ -21,51 +21,54 @@ int main()
    cin >> jsonFile;
    if (json.read(jsonFile))
       cout << "File \"" << jsonFile << "\" was read in successfully." << endl;
-   else {
+   else
+   {
       cerr << "Failed to read in file \"" << jsonFile << "\"!" << endl;
       exit(-1); // jsonFile does not exist.
    }
 
    // TODO read and execute commands
+   cout << "Enter command: ";
+   string command;
+   while (true)
+   {
       cout << "Enter command: ";
-      string command;
-   while (true) {
-      cout << "Enter command: ";
-      cin>>command;
-      if(command == "EXIT"){
+      cin >> command;
+      if (command == "EXIT")
+      {
          break;
       }
-      else if (command== "ADD"){
+      else if (command == "ADD")
+      {
          string key;
          int value;
-         cin>>key;
-         cin>>value;
-         json.add(key,value);
+         cin >> key;
+         cin >> value;
+         json.add(key, value);
       }
-      else if (command== "SUM"){
+      else if (command == "SUM")
+      {
          json.sum();
       }
-      else if (command== "MAX"){
+      else if (command == "MAX")
+      {
          json.max();
       }
-      else if (command== "PRINT"){
+      else if (command == "PRINT")
+      {
          json.print();
       }
-      else if (command== "SUM"){
+      else if (command == "SUM")
+      {
          json.sum();
       }
-      else if (command== "AVE"){
+      else if (command == "AVE")
+      {
          json.ave();
       }
-      else if (command== "MIN"){
+      else if (command == "MIN")
+      {
          json.min();
       }
-
-
-
-      
-      
-      
-      
    }
 }
