@@ -1,6 +1,0 @@
-cirr ./tests.fraig/sim13.aag
-Cirsw
-Ciropt
-Cirstr
-Cirsim -r -o test.out
-Q -f
